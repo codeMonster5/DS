@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DataStructure
 {
@@ -19,7 +20,7 @@ namespace DataStructure
 
             while (value.right != null)
             {
-                Console.WriteLine(value.right.value);
+               // Console.WriteLine(value.right.value);
 
                 value.right = value.right.right;
             }
@@ -37,9 +38,12 @@ namespace DataStructure
             root.right.right.right.right = new findRightSibling.Node(12, root.right.right.right);
 
             // passing 10 
-           // Console.WriteLine(findRightSibling.findRightSiblings(root.left.left.left, 0).data);
+            // Console.WriteLine(findRightSibling.findRightSiblings(root.left.left.left, 0).data);
 
             //Console.Write(value);
+            //powerset
+
+           Console.WriteLine(Recursion.Powerset.Powersets(new List<int> { 1, 2, 3 }));
 
             Console.ReadLine();
         }
