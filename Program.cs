@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructure.Strings;
+using System;
 using System.Collections.Generic;
 
 namespace DataStructure
@@ -43,9 +44,29 @@ namespace DataStructure
             //Console.Write(value);
             //powerset
 
-           Console.WriteLine(Recursion.Powerset.Powersets(new List<int> { 1, 2, 3 }));
+            // Console.WriteLine(Recursion.Powerset.Powersets(new List<int> { 1, 2, 3 }));
 
+            //String[] arr = {"geeksforgeeks", "geeks",
+            //        "geek", "geezer"};
+            //int n = arr.Length;
+
+            //String ans = LongestCommonString.commonPrefix(arr, n);
+
+            //if (ans.Length > 0)
+            //{
+            //    Console.Write("The longest common " +
+            //                "prefix is - " + ans);
+            //}
+            //else
+            //{
+            //    Console.Write("There is no common prefix");
+            //}
+
+            String str = "-134";
+            int num = Atoi.atoi(str);
+            Console.WriteLine(num);
             Console.ReadLine();
+
         }
     }
 }
