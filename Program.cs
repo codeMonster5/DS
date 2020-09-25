@@ -62,8 +62,7 @@ namespace DataStructure
             //    Console.Write("There is no common prefix");
             //}
 
-            String str = "-134";
-            int num = Atoi.atoi(str);
+            var num =  UnderscorifySubstrings.UnderscorifySubstring("manikbsbckvmanijscjsbkvbdjbvojsdvhbfvkfsdvmani", "mani");
             Console.WriteLine(num);
             Console.ReadLine();
 
