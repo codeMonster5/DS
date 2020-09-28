@@ -1,4 +1,5 @@
-﻿using DataStructure.Strings;
+﻿using DataStructure.Graph;
+using DataStructure.Strings;
 using System;
 using System.Collections.Generic;
 
@@ -38,32 +39,12 @@ namespace DataStructure
             root.right.right.right = new findRightSibling.Node(8, root.right.right);
             root.right.right.right.right = new findRightSibling.Node(12, root.right.right.right);
 
-            // passing 10 
-            // Console.WriteLine(findRightSibling.findRightSiblings(root.left.left.left, 0).data);
+            //
 
-            //Console.Write(value);
-            //powerset
 
-            // Console.WriteLine(Recursion.Powerset.Powersets(new List<int> { 1, 2, 3 }));
+           Console.WriteLine(HasSingleCycles.HasSingleCycle(new int[] { -1, 1, -1, 1 }));
 
-            //String[] arr = {"geeksforgeeks", "geeks",
-            //        "geek", "geezer"};
-            //int n = arr.Length;
 
-            //String ans = LongestCommonString.commonPrefix(arr, n);
-
-            //if (ans.Length > 0)
-            //{
-            //    Console.Write("The longest common " +
-            //                "prefix is - " + ans);
-            //}
-            //else
-            //{
-            //    Console.Write("There is no common prefix");
-            //}
-
-            var num =  UnderscorifySubstrings.UnderscorifySubstring("manikbsbckvmanijscjsbkvbdjbvojsdvhbfvkfsdvmani", "mani");
-            Console.WriteLine(num);
             Console.ReadLine();
 
         }
